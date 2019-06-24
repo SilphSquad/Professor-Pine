@@ -39,7 +39,7 @@ class PartyManager {
           }
 
           if ((now > party.hatchTime && party.hatchTime > lastIntervalRunTime)
-              || (now > party.endTime && party.endTime > lastIntervalRunTime)) {
+            || (now > party.endTime && party.endTime > lastIntervalRunTime)) {
             const newChannelName = party.generateChannelName();
 
             await this.getChannel(party.channelId)
@@ -271,6 +271,8 @@ class PartyManager {
 
                   await party.persist();
                 });
+
+              return {error: new Error('Message does not exist'), ok: false};
             }
           } else {
             const message = await channel.channel.messages.fetch(messageId);
@@ -279,11 +281,11 @@ class PartyManager {
         })
         .catch(err => {
           log.error(err);
-          return Promise.resolve({error: new Error('Message does not exist'), ok: false});
+          return {error: new Error('Message does not exist'), ok: false};
         });
     } catch (err) {
       log.error(err);
-      return Promise.resolve({error: err, ok: false});
+      return {error: err, ok: false};
     }
   }
 
