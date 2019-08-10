@@ -19,8 +19,8 @@
   "showUnknownMoves": true,
   "databaseRaids": true,
   "emoji": {
-    "thumbsUp": "thumbsup",
-    "thumbsDown": "thumbsdown",
+    "thumbsUp": "pinethumbsup",
+    "thumbsDown": "pinethumbsdown",
     "shiny": "pineshiny"
   },
   "features": {
@@ -35,11 +35,11 @@
     "bot-lab": "the-bot-lab",
     "mod-bot-lab": "mod-bot-only",
     "unown": "unown-sightings",
-    "ex-gym-raids": "possiveis-ex-raids"
-    "pvp": "rank-checker"
+    "ex-gym-raids": "potential-ex-gym-raids",
+    "pvp": "pvp-discussion"
   },
   "categories": {
-    "pvp": "pvp chat and tournaments"
+    "pvp": "PVP CHAT AND TOURNAMENTS"
   },
   "helpGroups": [
     "basic-raid",
