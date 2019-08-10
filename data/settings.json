@@ -36,6 +36,10 @@
     "mod-bot-lab": "mod-bot-only",
     "unown": "unown-sightings",
     "ex-gym-raids": "possiveis-ex-raids"
+    "pvp": "rank-checker"
+  },
+  "categories": {
+    "pvp": "pvp chat and tournaments"
   },
   "helpGroups": [
     "basic-raid",
