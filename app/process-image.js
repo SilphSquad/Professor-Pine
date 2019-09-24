@@ -871,7 +871,7 @@ class ImageProcessing {
   }
 
   async getPokemonName(id, message, image, region) {
-    const PokemonType = Helper.client.registry.types.get('pokemon');
+    const PokemonType = Helper.client.registry.types.get('raidpokemon');
     let values,
       pokemon,
       cp;
@@ -990,7 +990,7 @@ class ImageProcessing {
   }
 
   async getTier(id, message, image, region) {
-    const PokemonType = Helper.client.registry.types.get('pokemon');
+    const PokemonType = Helper.client.registry.types.get('raidpokemon');
     let values, pokemon;
 
     // try different levels of processing to get time
